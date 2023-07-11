@@ -23,7 +23,7 @@ public class Base {
 	@AfterMethod
 	public void browserCloseorQuit()
 	{
-		driver.quit();
+		//driver.quit();
 	}
 	
 	
