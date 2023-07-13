@@ -13,6 +13,8 @@ public class CheckBoxDemo extends Base {
 	public void checkBoxDemo() {
 		
 		driver.navigate().to("https://selenium.obsqurazone.com/check-box-demo.php");
+		MenuOptions menuoptions = new MenuOptions();
+		menuoptions.menuOptionsDemo("Checkbox Demo");
 		WebElement checkBoxClick = driver.findElement(By.xpath("//input[@id = 'gridCheck']"));
 		checkBoxClick.click();
 		Boolean isCheckBoxIsSelected = checkBoxClick.isSelected();

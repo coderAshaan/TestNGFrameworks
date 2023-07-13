@@ -21,7 +21,16 @@ public class DropDownDemo extends Base {
 		select.selectByValue("Yellow");
 		//or
 		select.selectByIndex(3);
-	}
+		List<WebElement> colorListOptions = select.getOptions();
+		int size =  colorListOptions.size();
+		//Multiple drop down
+		WebElement multipleDropDown = driver.findElement(By.xpath("//select[@id='multi-select-field']"));
+		Select select2 = new Select(multipleDropDown);
+		//select2.isMultiple();
+		Boolean isMultipleSelect = select2.isMultiple();
+		select2.selectByVisibleText("Red");
+		select2.selectByValue("Yellow");
+		}
 	
 	
 	@Test

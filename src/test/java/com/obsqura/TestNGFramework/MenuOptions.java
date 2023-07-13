@@ -10,7 +10,7 @@ public class MenuOptions extends Base {
 
 	
 	@Test
-	public void menuOptionsDemo() {
+	public void menuOptionsDemo(String menucategory) {
 		
 	//	driver.navigate().to("https://selenium.obsqurazone.com/check-box-demo.php");
 		
