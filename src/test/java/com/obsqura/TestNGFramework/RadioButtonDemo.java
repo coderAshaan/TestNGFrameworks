@@ -25,25 +25,25 @@ public class RadioButtonDemo extends Base {
 		String expectedResult = "Gender : Female"+"\n"+"Age group: 19 to 44";
 		
 		driver.navigate().to("https://selenium.obsqurazone.com/radio-button-demo.php");
-		WebElement patientsGender = driver.findElement(By.xpath("//input[@id='inlineRadio21']"));
-		patientsGender.click();
-		boolean isSelectedPatientsGender = patientsGender.isSelected();
+		WebElement patientsGenderRadioButton = driver.findElement(By.xpath("//input[@id='inlineRadio21']"));
+		patientsGenderRadioButton.click();
+		boolean isSelectedPatientsGender = patientsGenderRadioButton.isSelected();
 		
-		WebElement patientsAgeGroup = driver.findElement(By.xpath("//input[@id='inlineRadio23']"));
-		patientsAgeGroup.click();
-		boolean isSelectedPatientsAgeGroup = patientsAgeGroup.isSelected();
+		WebElement patientsAgeGroupRadioButton = driver.findElement(By.xpath("//input[@id='inlineRadio23']"));
+		patientsAgeGroupRadioButton.click();
+		boolean isSelectedPatientsAgeGroup = patientsAgeGroupRadioButton.isSelected();
 		
 		WebElement getResultButton = driver.findElement(By.xpath("//button[@id='button-two']"));
 		getResultButton.click();
 		boolean getResultButtonIsDisplayed = getResultButton.isDisplayed();
 		
 		WebElement getResultText = driver.findElement(By.xpath("//div[@id='message-two']"));
-		String textDataOfGetResult = getResultText.getText();
+		String actualTextDataOfGetResult = getResultText.getText();
 		
 		assertTrue(isSelectedPatientsGender, "Patients gender not selected");
 		assertTrue(isSelectedPatientsAgeGroup, "Patients age group is not selected");
 		assertTrue(getResultButtonIsDisplayed, "Get result button is not displayed");
-		assertEquals(textDataOfGetResult, expectedResult, "Expected and actual result are not same");
+		assertEquals(actualTextDataOfGetResult, expectedResult, "Expected and actual result are not same");
 		
 		
 	}

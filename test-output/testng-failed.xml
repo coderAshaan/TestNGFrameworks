@@ -3,23 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.obsqura.TestNGFramework.Assertion">
+      <class name="com.obsqura.TestNGFramework.RadioButtonDemo">
         <methods>
-          <include name="verifyTwoInputFieldWhenValueEnterOnTextFieldAndClcikOnGetTotalButton"/>
-          <include name="verifyShowMessageButtonisDisplayed"/>
-          <include name="verifyGetTotalButtonIsEnabled"/>
-          <include name="verifyButtonColorBackGroundColorAndFontWeightofShowMessageButton"/>
-          <include name="verifyShowMessageButtonText"/>
           <include name="initialiseBrowser"/>
-          <include name="verifyTheHeightAndWidthofShowMessageButton"/>
-          <include name="verifyTheColorOfShowMessageButton"/>
+          <include name="checkGroupRadioButtons"/>
           <include name="browserCloseorQuit"/>
-          <include name="verifySingleInputFieldWhenEnterDataOnTextFieldAndClcikOnShowMessageButton"/>
-          <include name="verifyTheFontWeightofShowMessageButton"/>
-          <include name="verifyEnterValueBisAllignedBelowofEnterValueA"/>
-          <include name="softAssert"/>
         </methods>
-      </class> <!-- com.obsqura.TestNGFramework.Assertion -->
+      </class> <!-- com.obsqura.TestNGFramework.RadioButtonDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

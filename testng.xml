@@ -5,7 +5,7 @@
 		<classes>
 			<class name="com.obsqura.TestNGFramework.RadioButtonDemo">
 			<methods>
-			<include name = "radioButtonDemo"/>
+			<include name = "checkGroupRadioButtons"/>
 			</methods>
 			</class>
 		</classes>
